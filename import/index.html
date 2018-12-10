@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+<head>
+	<title>Import Samochodów Słomniki - Wynajem Autolawet Kraków</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/qmoto.css"/>
+	<link href="http://fonts.googleapis.com/css?family=Titillium+Web:700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"/>
+	<link rel="pingback" href="http://www.krakowautolaweta.pl/xmlrpc.php" />
+	<link rel='next' title='Kontakt' href='http://www.krakowautolaweta.pl/kontakt/' />
+	<meta name="generator" content="WordPress 3.6.1" />
+	<link rel='canonical' href='http://www.krakowautolaweta.pl/' />
+</head>
+<body>
+	<div class="background REL">
+		<div class="main">
+			
+			<div class="top">
+				<div class="menu">
+					<a href="http://www.krakowautolaweta.pl/">Autolaweta Kraków</a>
+					<a href="/laweta/">Laweta</a>
+					<a href="/oferta/">Cennik</a>
+					<a href="/ubezpieczenia/">Ubezpieczenia</a>
+					<a href="/import/" class="act">Import</a>
+					<a href="/kontakt/"> Kontakt</a>
+					<div class="CLAER"></div>
+				</div>
+				<div class="info">KONTAKT: 602 320 340<span> </span></div>
+				<div></div>
+			</div>
+			<div class="center">
+				<h1>Import samochodów <span>Kraków</span></h1>
+				<div>
+					<div>
+						<div class="right_info">
+							<div class="equip additional_inf mb_45">
+								<h2>Nasza aktualna oferta:</h2>
+								<div class="line_b mb_17"></div>
+								<div class="specification">
+								<table>
+									<?php
+															$cH = curl_init('http://www.auto-euro.qmoto.pl/');
+															curl_setopt($cH, CURLOPT_RETURNTRANSFER, true);
+															curl_setopt($cH, CURLOPT_POST, true);
+															curl_setopt($cH, CURLOPT_POSTFIELDS, true);
+															$callback = curl_exec($cH);
+															//usuniecie komentarzy
+															$div = preg_match('@<th>link</th>(.*?)</table>@sm',$callback, $matches);
+															echo $matches[1];
+															?>
+										</table>
+								</div>
+							</div>
+							<div class="equip additional_inf mb_45">
+								<h2>!!! Gwarancja doboru najlepszej oferty dla każdego klienta !!!</h2>
+								<div class="line_b mb_17"></div>
+								<div class="specification">
+									<span>Teren działania Słomniki, Miechów, Proszowice, Skała, okolice Krakowa</span>
+								</div>
+							</div>
+						</div>
+						<div class="text_page">
+						<p>Zajmujemy się importem samochodów z Niemiec i innych krajów europejskich.</p>
+						<p>Sprowadzane przez nas samochody są bezwypadkowe i serwisowane.</p>
+						<p>Spełniamy marzenia naszych klientów, sprowadzając samochody na zamówienie.</p>
+						<p>Wyjeżdżamy z klientami po samochody znalezione przez nich w internecie.</p>
+						<p>Pomagamy załatwić wszelkie formalności związane ze sprowadzeniem samochodu z zagranicy.</p>
+						<p>Weryfikujemy stan techniczny samochodu i dokumenty samochodu.</p>
+						<p>Sprowadzne przez nas samochody sprzedajemy na fakturę vat.</p>
+						<p>Klient otrzymuje komplet dokumentów potrzebnych do rejestracji.</p>
+						</div>
+						<div class="CLEAR"></div>
+					</div>
+					<div class="line_b mb_17"> </div>
+					<div class="footer">
+						Copyright © 2014 by <a href="http://www.krakowautolaweta.pl/">Autolaweta Kraków</a> - krakowautolaweta.pl
+					
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+	<div class="CLEAR"></div>
+	<div class="bottom_line"></div>
+	<!-- Piwik -->
+	<script type="text/javascript">
+	var pkBaseURL = (("https:" == document.location.protocol) ? "https://count244.info/" : "http://count244.info/");
+	document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+	</script><script type="text/javascript">
+	try {
+	var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 16);
+	piwikTracker.trackPageView();
+	piwikTracker.enableLinkTracking();
+	} catch( err ) {}
+	</script><noscript><p><img src="http://count244.info/piwik.php?idsite=16" style="border:0" alt="" /></p></noscript>
+	<!-- End Piwik Tracking Code -->
+</body>
+</html>

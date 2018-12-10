@@ -1,0 +1,52 @@
+.CLEAR{
+	clear: both;
+}
+
+.DISP_NO{
+	display: none;
+}
+
+.LEFT{
+	float: left;
+}
+
+.RIGHT{
+	float: right;
+}
+
+/*COLOURS*/
+.BLUE, a.BLUE{
+	color:#416fb6;
+}
+
+.RED, a.RED{
+	color: red;
+}
+
+.REL{
+	position: relative;
+}
+
+.WHITE, a.WHITE{
+	color: #fff;
+}
+
+.LIGHT_GREY,a.LIGHT_GREY{
+	color:#d6d4c8;
+}
+
+.B{
+	font-weight: bold;
+}
+
+.P10{
+	padding: 10px;
+}
+
+.TXT-ALIGN_CENTER{
+	text-align: center;
+}
+
+.MARGIN_B_10{
+	margin-bottom: 10px;
+}
