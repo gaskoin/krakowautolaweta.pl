@@ -97,5 +97,31 @@
 	} catch( err ) {}
 	</script><noscript><p><img src="http://count244.info/piwik.php?idsite=16" style="border:0" alt="" /></p></noscript>
 	<!-- End Piwik Tracking Code -->
+    
+    <script type="text/javascript">
+        var callback = function(html) {
+            text = document.createElement('html');
+            text.innerHTML = html;
+            elements = text.getElementsByTagName('article');
+
+           
+            console.log(elements[0].getElementsByClassName('offer-item__photo-link')[0].style.backgroundImage)
+            console.log(elements[0].getElementsByClassName('offer-item__photo-link')[0].title)
+            console.log(elements[0].getElementsByClassName('offer-title__link')[0].text.trim())
+            console.log(elements[0].getElementsByClassName('offer-price__number')[0].textContent.trim())
+
+            console.log(elements[0].getElementsByClassName('offer-item__params-item')[0].textContent.trim())
+            console.log(elements[0].getElementsByClassName('offer-item__subtitle')[0].textContent.trim())
+        }
+    
+        http = new XMLHttpRequest();
+        http.onreadystatechange = function() { 
+            if (http.readyState == 4 && http.status == 200)
+                callback(http.responseText);
+        }
+        
+        http.open('GET', 'https://auto-euro-slomniki.otomoto.pl');
+        http.send(null);
+	</script>
 </body>
 </html>
