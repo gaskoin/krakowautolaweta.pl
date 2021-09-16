@@ -1,35 +1,10 @@
 @CHARSET 	"UTF-8";
-@import 	"classes.css";/*Klasy i tagi ogólnie używane i do tinyMCE*/
 
-html,body,div,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote{margin:0;padding:0;}
-img,body,html{border:0;}
-h1,h2,h3,h4,h5,h6{font-size:100%;}
-
-/* TAGS - domyślne dla tagów */
 body{
 	font-family:Tahoma, Verdana, Geneva, Arial, Helvetica;
-	font-size:12px;
+	font-size:14px;
 	color:#000000;
 	background: url("../gfx/baseline.png") repeat-y top center;
-}
-
-h1{
-	font-size: 24px;
-	padding-bottom: 10px;
-}
-
-h2{
-	font-size: 18px;
-	padding-bottom: 10px;
-}
-
-h3{
-	font-size: 14px;
-	padding-bottom: 10px;
-}
-
-p{
-	line-height: 18px;
 }
 
 a{
@@ -56,7 +31,7 @@ input, select, texarea{
 
 .main{
 	margin: 0 auto;
-	width: 988px;
+	width: 70%;
 }
 
 .top{
@@ -66,7 +41,6 @@ input, select, texarea{
 
 .info{
 	float: right;
-	width: 262px;
 	padding: 17px 40px 0;
 	color: #810A0A;
 	font-style: italic;
@@ -74,13 +48,6 @@ input, select, texarea{
 	font-size: 26px;
 	font-family: 'Myriad Pro';
 	text-shadow:1px 1px 1px #810A0A;
-}
-
-.info span{
-	font-size: 22px;	
-	font-style: normal;
-	text-shadow:1px 2px 1px #810A0A;
-	font-weight: bold;
 }
 
 .menu{
@@ -112,7 +79,6 @@ input, select, texarea{
 
 .center{
 	margin-left: 28px;
-	
 }
 
 .center h1{
@@ -129,80 +95,11 @@ input, select, texarea{
 	color: #000000;
 }
 
-.line{
-	background: url("../gfx/line.gif") repeat-x;
-	height: 2px;
-	width: 489px;
-	position: absolute;
-	left: 0;
-	top: 128px;
-}
-
-.text_page{
-	text-shadow:1px 1px 1px #FFFFFF;
-	font-size: 13px;
-	margin-bottom: 23px;
-}
-
-.text_page p{
-	line-height: 21px;
-}
-
-.left_part{
-	float: left;
-	width: 381px;
-	margin-right: 27px;
-}
-
-.left_pic{
-	background:#fff url("../gfx/back_line_pic.png") no-repeat;
+.picture {
 	border: 1px solid #bbbbbb;
-	float: left;
-}
-
-.left_pic > a,.left_pic > img{
-	display: block;
+	background-color: #FFFFFF99;
 	padding: 6px;
-}
-
-.right_info{
-	float: left;
-	width: 550px;
-}
-
-.equip{
-	margin-bottom: 14px;
-}
-
-.equip h2{
-	background: url("../gfx/counter.png") no-repeat left 0;
-	color: #000000;
-	font-size: 14px;
-	font-family: 'Titillium Web'; 
-	padding: 13px 10px 1px 52px;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-}
-
-.line_b{
-	background: url("../gfx/line.gif") repeat-x;
-	height: 2px;
-}
-
-.mb_17{
-	margin-bottom: 17px;
-}
-
-.mb_25{
-	margin-bottom: 25px;
-}
-
-.mb_45{
-	margin-bottom: 45px;
-}
-
-.mb_60{
-	margin-bottom: 60px;
+	margin-bottom: 15px;
 }
 
 .specification{
@@ -215,45 +112,6 @@ input, select, texarea{
 	display: block;
 }
 
-.additional_inf h2{
-	background: url("../gfx/additional_inf.png") no-repeat left 0;
-	padding: 9px 10px 1px 52px;
-}
-
-table.tab_car{
-	border: 1px solid #c1c1c1;
-}
-
-table.tab_car th{
-	background: url("../gfx/tab_th_back.gif") repeat-x left top;
-	color: #000000;
-	font-size: 12px;
-	font-weight: bold;
-	height: 37px;
-	border-left: 1px solid #fff;
-	border-right: 1px solid #c1c1c1;
-	border-bottom: 1px solid #c1c1c1;
-}
-
-table.tab_car td{
-	height: 37px;
-	color: #b60e0e;
-	text-align: center;
-	border-right: 1px solid #c1c1c1;
-}
-
-.gray, table.tab_car td.gray{
-	color: #848484;
-}
-
-table.tab_car th.last, table.tab_car td.last{
-	border-right: 0;
-}
-
-.red{
-	color: #b60e0e;
-}
-
 .footer{
 	text-align: center;
 	font-size: 11px;
@@ -263,69 +121,4 @@ table.tab_car th.last, table.tab_car td.last{
 .bottom_line{
 	background: url("../gfx/bottom_line.gif") no-repeat left top;
 	height: 24px;
-}
-
-p.cont, cont{
-	color: #000000;
-    font-size: 17px;
-    line-height: 32px;
-	font-size: 16px;
-    line-height: 30px;
-}
-
-.cont_s{
-	font-weight: bold;
-	text-decoration: underline;
-	color: #000000;
-    font-size: 20px;
-	margin-bottom: 13px;
-	font-family: 'Titillium Web';
-}
-
-.cont_span{
-	display: block;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 35px;
-    text-decoration: none;
-	font-family: 'Titillium Web';
-}
-
-.cont_t{
-	display: block;
-    font-size: 17px;
-    font-weight: bold;
-    margin-top: 15px;
-	font-family: 'Titillium Web';
-}
-
-.bord_bott{
-	border-bottom: 1px solid #C1C1C1;;
-}
-
-.pad_tab_c{
-	padding: 0 40px 0 15px
-}
-
-.pad_tab_r{
-	padding: 0 0 0 15px;
-}
-
-.text_c{
-	font-weight: bold;
-    line-height: 21px;
-    text-transform: uppercase;
-}
-
-.note_red{
-	font-weight: bold;	
-   text-transform: uppercase;
-   color: #b60e0e;
-   margin: 20px;
-}
-
-.text_c span{
-	font-family: 'Titillium Web';
-    font-size: 17px;
-    text-decoration: underline;
 }

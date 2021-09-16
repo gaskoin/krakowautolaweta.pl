@@ -4,32 +4,32 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://krakowautolaweta.pl/</loc>
-    <lastmod>2020-03-30T22:09:02+00:00</lastmod>
+    <lastmod>2021-09-15T22:09:02+00:00</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://krakowautolaweta.pl/laweta/</loc>
-    <lastmod>2020-03-30T22:09:02+00:00</lastmod>
+    <lastmod>2021-09-15T22:09:02+00:00</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://krakowautolaweta.pl/oferta/</loc>
-    <lastmod>2020-03-30T22:09:02+00:00</lastmod>
+    <lastmod>2021-09-15T22:09:02+00:00</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://krakowautolaweta.pl/ubezpieczenia/</loc>
-    <lastmod>2020-03-30T22:09:02+00:00</lastmod>
+    <lastmod>2021-09-15T22:09:02+00:00</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://krakowautolaweta.pl/import/</loc>
-    <lastmod>2020-03-30T22:09:02+00:00</lastmod>
+    <lastmod>2021-09-15T22:09:02+00:00</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://krakowautolaweta.pl/kontakt/</loc>
-    <lastmod>2020-03-30T22:09:02+00:00</lastmod>
+    <lastmod>2021-09-15T22:09:02+00:00</lastmod>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>
